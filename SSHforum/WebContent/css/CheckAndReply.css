@@ -1,0 +1,318 @@
+@CHARSET "UTF-8";
+#head
+{
+	box-shadow:3px 0px 0px;
+}
+.badge
+{
+	background-color: gray;
+	font-family: 微软雅黑;
+	border-radius:3px;
+}
+body
+{
+ 	background-color: white;	
+}
+
+.navbar
+{
+	background-color: DarkSeaGreen;
+}
+.navbar-brand
+{
+	font-family: 'Trebuchet MS';
+	padding-left:200px;
+	font-size: 2.2em;
+}
+.form-control
+{
+	border-radius:2px;
+	font-family: 微软雅黑;
+	width: 520px;
+	border-color: DarkSeaGreen;
+}
+.btn-default
+{
+	border-radius:3.2px;
+	font-family:微软雅黑;
+	color:White;
+	background-color: DarkSeaGreen;
+	width: 90px;
+}
+.navbar-nav
+{
+	font-family: 微软雅黑;
+	font-size:1.2em;
+	padding-left:50px;
+}
+.dropdown-menu
+{
+	background-color: WhiteSmoke;
+	font-size: 0.9em;
+}
+font
+{
+	color: white;
+}
+.modal-content
+{
+	background-color: white;
+	height: 380px;
+	width: 550px;
+	margin-top: 140px;
+	
+}
+.modal-title
+{
+	font-family: 微软雅黑;
+	color:DarkSeaGreen;
+}
+a:link
+{
+	text-decoration: none;
+}
+.modal-body
+{
+	padding-left:15px;
+	padding-top:5px;
+	padding-bottom: 5px;
+}
+
+.privateLetter-btn
+{
+	color:white;
+	border:1px solid DarkSeaGreen;
+	border-radius:5px;
+	height:30px;
+	width:80px;
+	background-color:DarkSeaGreen;
+	font-family: 微软雅黑;
+	font-size: 1.0em;
+}
+/* 以上为复用 */
+
+.Content
+{
+	width:100%;;
+	height:800px;	
+	
+}
+.Content-title
+{
+	width:750px;
+	height:45px;
+	border:1px solid lightgray;
+	margin-left:280px;
+	font-family: 微软雅黑;
+	font-size: 17px;
+	padding-top:10px;
+	border-color: lightgray;
+	border-radius:6px;
+	background-color: white;
+	font-weight: 400;
+}
+.Content-main
+{
+	width:750px;
+	height:300px;
+	border:1px solid lightgray;
+	border-color: lightgray;
+	background-color: white;
+	border-radius:6px;
+	margin-left:280px;
+}
+.comment-region
+{
+	width:750px;
+	height:400px;
+	border-color: lightgray;
+	background-color: white;
+	border-radius:6px;
+	margin-left:280px;
+}
+.Content-main-left
+{
+	height:250px;
+	width:120px;
+	background-color: white;
+	border:1px solid GhostWhite;
+	float:left;
+}
+
+.comment-region-left
+{
+	height:250px;
+	width:120px;
+	background-color: white;
+	border:1px solid GhostWhite;
+	float:left;
+}
+.Content-main-left-name
+{
+	height:50px;
+	width:110px;
+	font-family: 微软雅黑;
+	font-size: 14px;
+	text-align: center;
+	padding-left:10px;
+	padding-top:10px;
+}
+.comment-region-left-name
+{
+	height:50px;
+	width:110px;
+	font-family: 微软雅黑;
+	font-size: 14px;
+	text-align: center;
+	padding-left:10px;
+	padding-top:10px;
+}
+.Content-main-picture
+{
+	height:85px;
+	width:85px;
+	border:1px solid;
+	margin-top:20px;
+	margin-left:18px;
+}
+.comment-region-picture
+{
+	height:85px;
+	width:85px;
+	border:1px solid;
+	margin-top:20px;
+	margin-left:18px;
+}
+.Content-main-right
+{
+	width: 600px;
+	height:250px;
+	border:1px solid;
+	margin-left:120px;
+	border:1px solid GhostWhite;
+	font-family: 微软雅黑;
+	padding-top:17px;
+	font-size: 15px;
+	padding-left:5px;
+}
+.comment-region-right
+{
+	width: 600px;
+	height:3000px;
+	margin-left:120px;
+	font-family: 微软雅黑;
+	padding-top:17px;
+	font-size: 15px;
+	padding-left:5px;
+}
+.Content-main-showtime
+{
+	color:lightgray;
+	font-size: 10px;
+	height:18px;
+	margin-top: 180px;
+	padding-left:450px;;
+}
+.comment-region-showtime
+{
+	color:lightgray;
+	font-size: 10px;
+	height:18px;
+	margin-top: 180px;
+	padding-left:400px;;
+}
+.reply
+{
+	padding-left:30px;
+	padding-top:20px;
+	display: none;
+}
+textarea
+{
+	width:560px;
+	font-size: 10px;
+	font-family: 微软雅黑;
+}
+.replyTime
+{
+	font-size: 10px;
+	color: lightgray;
+	float: right;
+}
+.replySpan
+{
+	color:Tan;
+	cursor: pointer;
+}
+.replyBtn
+{
+	float:right;
+	border:1px white;
+	border-radius:6px;
+	font-family: 微软雅黑;
+	font-size: 12px;
+}
+.footer
+{
+	width:620px;
+	height:300px;
+	border:1px solid lightgray;
+	margin-left:320px;
+	padding-top:20px;
+	padding-left:30px;	
+	border-radius:4px;
+}
+#paging
+{
+	margin-left: 900px;
+    font-family: 微软雅黑;
+}
+.JumpPage
+{
+	width: 40px;
+	border-radius:2px;
+	border:1px solid;
+}
+.JumpBtn
+{
+	background-color: DarkSeaGreen;
+    border-radius: 2px; 
+    border: 1px solid DarkSeaGreen;
+    color:white;
+    font-family: 微软雅黑;
+    width:40px;
+}
+.label-primary
+{
+	background-color: DarkSeaGreen;
+}
+.issueReply
+{
+	font-family: 微软雅黑;
+	font-size: 1.6em;
+	font-weight: 400px;
+}
+.issueReplyBtn
+{
+	border:1px solid DarkSeaGreen;
+	border-radius:5px;
+	color:white;
+	background-color: DarkSeaGreen;
+	width: 80px;
+	font-family: 微软雅黑;
+	font-size: 1.3em;
+	float: inherit;
+}
+.comment-region-praise
+{
+	font-size: 11px;
+	text-align:right;
+	padding-right:38px;
+	cursor: pointer;
+	font-family: 微软雅黑;	
+}
+
+a:HOVER,a:FOCUS
+{
+	color:Tan;
+}

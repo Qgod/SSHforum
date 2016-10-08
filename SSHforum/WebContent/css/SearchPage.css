@@ -1,0 +1,196 @@
+@CHARSET "UTF-8";
+#head
+{
+	box-shadow:3px 0px 0px;
+}
+
+body
+{
+ 	background-color: white;	
+}
+.badge
+{
+	background-color: gray;
+	font-family: 微软雅黑;
+	border-radius:3px;
+}
+.navbar
+{
+	background-color: DarkSeaGreen;
+}
+.navbar-brand
+{
+	font-family: 'Trebuchet MS';
+	padding-left:200px;
+	font-size: 2.2em;
+}
+.form-control
+{
+	border-radius:2px;
+	font-family: 微软雅黑;
+	width: 520px;
+	border-color: DarkSeaGreen;
+}
+.btn-default
+{
+	border-radius:3.2px;
+	font-family:微软雅黑;
+	color:White;
+	background-color: DarkSeaGreen;
+	width: 90px;
+}
+.navbar-nav
+{
+	font-family: 微软雅黑;
+	font-size:1.2em;
+	padding-left:50px;
+}
+.dropdown-menu
+{
+	background-color: WhiteSmoke;
+	font-size: 0.9em;
+}
+font
+{
+	color: white;
+}
+.modal-content
+{
+	background-color: white;
+	height: 380px;
+	width: 550px;
+	margin-top: 140px;
+	
+}
+.modal-title
+{
+	font-family: 微软雅黑;
+	color:DarkSeaGreen;
+}
+a:link
+{
+	text-decoration: none;
+}
+.modal-body
+{
+	padding-left:15px;
+	padding-top:5px;
+	padding-bottom: 5px;
+}
+
+.privateLetter-btn
+{
+	color:white;
+	border:1px solid DarkSeaGreen;
+	border-radius:5px;
+	height:30px;
+	width:80px;
+	background-color:DarkSeaGreen;
+	font-family: 微软雅黑;
+	font-size: 1.0em;
+}
+/* 以上为复用 */
+
+
+.Content-left
+{
+	width:600px;
+	height:inherit;
+	border:1px solid;
+	margin-left: 200px;
+	border-color: lightgray;
+	border-radius:6px;
+	float: left;
+}
+.Content-title
+{
+	height:50px;
+	font-family: 微软雅黑;
+	padding-top: 13px;
+	font-size: 18px;
+	color:gray;
+	padding-left:20px;
+}
+
+.Content-body
+{
+	height:220px;
+	margin-top:15px;
+}
+.Content-body-head
+{
+	width:85px;
+	height:200px;
+	float: left;
+	padding-top: 2px;
+}
+.Content-body-name
+{
+	width:500px;
+	height:20px;
+	float:left;
+	margin-left:6px;
+	font-family: 微软雅黑;
+	color:gray;
+	padding-top:0px;
+	font-size: 10px;
+	margin-top:10px;
+}
+.Content-body-title
+{
+	height:25px;
+	width:500px;
+	margin-left:90px;
+	margin-top:10px;
+	font-size: 15px;
+	font-family: 微软雅黑;
+	font-weight: 600;
+}
+.Content-body-content
+{
+	width:500px;
+	height:130px;
+	float:left;
+	margin-left:6px;
+	margin-top:10px;
+	font-size: 15px;
+	font-family: 微软雅黑;
+}
+.Content-right
+{
+	width:300px;
+	height:inherit;
+	border:1px solid lightgray;
+	margin-left:800px;
+	border-radius:5px;
+}
+.Content-userInfo
+{
+	width:296px;
+	height:60px;
+}
+.Content-userInfo-head
+{
+	height:57px;
+	width:58px;
+	float: left;
+
+}
+.Content-userInfo-name
+{
+	width:120px;
+	float:left;
+	padding-left:17px;
+	font-family: 微软雅黑;
+	font-weight: 600;
+}
+.Content-userInfo-simpleIntorduce
+{
+	width:200px;
+	font-size: 10px;
+	margin-top:10px;
+	margin-left:17px;
+	float:left;
+	font-family: 微软雅黑;
+	color:gray;
+}

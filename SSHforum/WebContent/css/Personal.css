@@ -1,0 +1,186 @@
+@CHARSET "UTF-8";
+#head
+{
+	box-shadow:3px 0px 0px;
+}
+
+body
+{
+ 	background-color: white;	
+}
+.badge
+{
+	background-color: gray;
+	font-family: 微软雅黑;
+	border-radius:3px;
+}
+.navbar
+{
+	background-color: DarkSeaGreen;
+}
+.navbar-brand
+{
+	font-family: 'Trebuchet MS';
+	padding-left:200px;
+	font-size: 2.2em;
+}
+.form-control
+{
+	border-radius:2px;
+	font-family: 微软雅黑;
+	width: 520px;
+	border-color: DarkSeaGreen;
+}
+.btn-default
+{
+	border-radius:3.2px;
+	font-family:微软雅黑;
+	color:White;
+	background-color: DarkSeaGreen;
+	width: 90px;
+}
+.navbar-nav
+{
+	font-family: 微软雅黑;
+	font-size:1.2em;
+	padding-left:50px;
+}
+.dropdown-menu
+{
+	background-color: WhiteSmoke;
+	font-size: 0.9em;
+}
+font
+{
+	color: white;
+}
+.modal-content
+{
+	background-color: white;
+	height: 380px;
+	width: 550px;
+	margin-top: 140px;
+	
+}
+.modal-title
+{
+	font-family: 微软雅黑;
+	color:DarkSeaGreen;
+}
+a:link
+{
+	text-decoration: none;
+}
+.modal-body
+{
+	padding-left:15px;
+	padding-top:5px;
+	padding-bottom: 5px;
+}
+
+.privateLetter-btn
+{
+	color:white;
+	border:1px solid DarkSeaGreen;
+	border-radius:5px;
+	height:30px;
+	width:80px;
+	background-color:DarkSeaGreen;
+	font-family: 微软雅黑;
+	font-size: 1.0em;
+}
+/* 以上为复用 */
+.Content_Personal
+{
+	height:900px;
+}
+.Content_progressBar
+{
+	width:632px;
+	height:120px;
+	border:1px solid lightgray;
+	margin-left: 260px;
+	margin-top:10px;
+	border-radius:5px;
+	padding-top:22px;
+}
+.PersonalInfo
+{
+	width:600px;
+	height:300px;
+	border:1px solid lightgray;
+	border-radius:6px;
+	margin-left:350px;
+	padding-left:30px;
+	padding-top:20px;
+	font-family: 微软雅黑;
+	font-weight: 600;
+	color:gray;
+	font-size: 20px;
+}
+
+.PersonalInfo_detail
+{
+	padding-left: 50px;
+	font-size: 13px;
+	color:DarkSeaGreen;
+}
+#AddressInfo,#WorkInfo,#EducationInfo,#IntroduceMyself
+{
+	margin-top:20px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	font-weight:200;
+}
+.button-style
+{
+	width: 50px;
+	height:34px;
+	border:1px solid;
+	background-color:DarkSeaGreen;
+	color:white;
+	border-radius:7px;
+}
+#AddressText,#WorkText,#EducationText,#IntroduceText
+{
+	display: none;
+}
+.Myquestion
+{
+	width:600px;
+	/* height:150px; */
+	border:1px solid lightgray;
+	margin-left:350px;
+	border-radius:6px;
+	font-family: 微软雅黑;
+	padding-left:30px;
+	padding-top:10px;
+	font-weight: 600;
+	font-size: 20px;
+	color:gray;
+}
+.question
+{
+	font-family: 微软雅黑;
+	color:#259;
+	font-size: 16px;
+	margin:auto;
+	padding-left:80px;
+	margin-left:10px;
+}
+.browseNumber
+{
+	width:70px;
+	height:22px;
+	border:1px solid;
+	float: left;
+	background-color:lightgray;
+	font-size: 10px;
+	text-align: center;
+	padding-top:2px;
+}
+.warning
+{
+	color:Darkred;
+	font-size: 10px;
+}

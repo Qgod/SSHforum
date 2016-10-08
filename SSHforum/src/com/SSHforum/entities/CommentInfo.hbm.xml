@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-5-27 14:53:44 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="com.SSHforum.entities">
+    <class name="CommentInfo" table="t_COMMENTINFO">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="comment" type="java.lang.String">
+            <column name="COMMENT" />
+        </property>
+        <property name="commenttime" type="date">
+            <column name="COMMENTTIME" />
+        </property>
+        <property name="praisenumber" type="integer">
+        	<column name="PRAISENUMBER"></column>
+        </property>
+        <many-to-one name="contentInfo" class="ContentInfo" lazy="false">
+            <column name="CONTENTINFO_id" />
+        </many-to-one>
+        <many-to-one name="userInfo" class="UserInfo" lazy="false">
+            <column name="USERINFO_id" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

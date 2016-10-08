@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-5-24 23:25:47 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="com.SSHforum.entities" >
+    <class name="ContentInfo" table="t_CONTENTINFO" >
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="title" type="java.lang.String">
+            <column name="TITLE" />
+        </property>
+        <property name="content" type="string">
+            <column name="CONTENT" />
+        </property>
+        <property name="topic" type="java.lang.String">
+            <column name="TOPIC" />
+        </property>
+        <property name="createtime" type="date">
+            <column name="CREATETIME" />
+        </property>
+        <property name="replys" type="int">
+        	<column name="REPLYS"></column>
+        </property>
+        <many-to-one name="userInfo" class="UserInfo" lazy="false">
+            <column name="USERINFO_ID" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,45 @@
+@CHARSET "UTF-8";
+body {
+	background-image: url(../images/bgp.jpg);
+}
+
+#Content {
+	width:500px;
+	height:100%;
+	margin: auto;
+	margin-top:46px;
+	index:1;
+	text-align: center;
+}
+h2{
+	font-family:Tahoma;
+	color:RosyBrown;
+	font-size: 4.6em;
+}
+.form-control{
+	width:70%;
+	border-radius:0px;
+	font-size: 1.2em;
+	border-color: Peru;
+	font-family: Microsoft YaHei;
+	color: Tan;
+}
+.btn-default{
+	border-color: BurlyWood;
+	background-color: RosyBrown;
+	width: 65%;
+	margin-left:-110px;
+	font-family: Microsoft YaHei;
+	font-size: 1.2em;
+	color: white;
+}
+#action{
+	font-size: 0.1em;
+	text-align: center;
+	color:black;
+	font-family: Microsoft YaHei;
+}
+hr
+{
+	border-color: BurlyWood;
+}

@@ -1,0 +1,186 @@
+@CHARSET "UTF-8";
+
+#head
+{
+	box-shadow:3px 0px 0px;
+}
+
+body
+{
+ 	background-color: white;	
+}
+.badge
+{
+	background-color: gray;
+	font-family: 微软雅黑;
+	border-radius:3px;
+}
+.navbar
+{
+	background-color: DarkSeaGreen;
+}
+.navbar-brand
+{
+	font-family: 'Trebuchet MS';
+	padding-left:200px;
+	font-size: 2.2em;
+}
+.form-control
+{
+	border-radius:2px;
+	font-family: 微软雅黑;
+	width: 520px;
+	border-color: DarkSeaGreen;
+}
+.btn-default
+{
+	border-radius:3.2px;
+	font-family:微软雅黑;
+	color:White;
+	background-color: DarkSeaGreen;
+	width: 90px;
+}
+.navbar-nav
+{
+	font-family: 微软雅黑;
+	font-size:1.2em;
+	padding-left:50px;
+}
+.dropdown-menu
+{
+	background-color: WhiteSmoke;
+	font-size: 0.9em;
+}
+font
+{
+	color: white;
+}
+.modal-content
+{
+	background-color: white;
+	height: 380px;
+	width: 550px;
+	margin-top: 140px;
+	
+}
+.modal-title
+{
+	font-family: 微软雅黑;
+	color:DarkSeaGreen;
+}
+a:link
+{
+	text-decoration: none;
+}
+.modal-body
+{
+	padding-left:15px;
+	padding-top:5px;
+	padding-bottom: 5px;
+}
+/* 以上为复用 */
+
+.Content-otherInfo
+{
+	width:600px;
+	height:220px;
+	border:1px solid lightgray;
+	margin-left:340px;
+	border-radius:6px;
+}
+.Content-otherInfo-nickname
+{
+	height:40px;
+	font-family: 微软雅黑;
+	font-size: 20px;
+	padding-top:5px;
+	padding-left:10px;
+	font-weight:600;
+	color:DarkSlateGray;
+}
+.Content-otherInfo-head
+{
+	width:85px;
+	height:85px;
+	margin-left:20px;
+	float:left;
+}
+.Content-otherInfo-detailInfo
+{
+	width:300px;
+	height:53px;
+	float:left;
+	margin-left:30px;
+	font-size: 10px;
+	font-family: 微软雅黑;
+	color:lightgray;
+}
+.Content-otherInfo-Intorduce
+{
+	width:300px;
+	float: left;
+	height:28px;
+	margin-left:30px;
+	margin-top:10px;
+	padding-top:4px;
+	font-size: 1.0em;
+	font-family: 微软雅黑;
+	color:gray;
+}
+.privateLetter
+{
+	height:40px;
+	padding-left:500px;
+}
+.privateLetter-btn
+{
+	
+	color:white;
+	border:1px solid DarkSeaGreen;
+	border-radius:5px;
+	height:30px;
+	width:80px;
+	background-color:DarkSeaGreen;
+	font-family: 微软雅黑;
+	font-size: 1.0em;
+}
+.Content-Others-issue
+{
+	width:600px;
+	height:70px;
+	border:1px solid lightgray;
+	margin-left:340px;
+	border-radius:5px;
+	
+}
+.Content-Others-issue-title
+{
+	height:35px;
+	width:300px;
+	font-family: 微软雅黑;
+	color:gray;
+	font-size: 1.7em;
+	margin-left:340px;
+}
+.Content-Others-issue-replyNumber
+{
+	height:30px;
+	width:40px;
+	background-color:lightgray;
+	font-family: 微软雅黑;
+	text-align: center;
+	padding-top: 3px;
+	font-size: 1.2em;
+	margin-left:30px;
+	float: left;
+}
+.Content-Others-issue-content
+{
+	height:30px;
+	width:300px;
+	float:left;
+	margin-left:20px;
+	font-family: 微软雅黑;
+	font-size: 1.2em;
+	color:gray;
+}

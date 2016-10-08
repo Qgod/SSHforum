@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="baseDao" class="com.SSHforum.dao.BaseDao">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+
+
+	<bean id="userInfoDao" class="com.SSHforum.dao.imp.UserInfoDaoImp"
+		parent="baseDao"></bean>
+	<bean id="contentInfoDao" class="com.SSHforum.dao.imp.ContentInfoDaoImp"
+		parent="baseDao"></bean>
+	<bean id="pagingDao" class="com.SSHforum.dao.imp.PagingDaoImp"
+		parent="baseDao"></bean>
+	<bean id="commentInfoDao" class="com.SSHforum.dao.imp.CommentInfoDaoImp"
+		parent="baseDao"></bean>
+	<bean id="vagueSearchDao" class="com.SSHforum.dao.imp.VagueSearchDaoImp"
+		parent="baseDao"></bean>
+	<bean id="privateLetterDao" class="com.SSHforum.dao.imp.PrivateLetterDaoimp"
+		parent="baseDao"></bean>
+
+
+	<bean id="userInfoService" class="com.SSHforum.service.imp.UserInfoServiceImp">
+		<property name="userInfoDao" ref="userInfoDao"></property>
+	</bean>
+
+	<bean id="contentInfoService" class="com.SSHforum.service.imp.ContentInfoServiceImp">
+		<property name="contentInfoDao" ref="contentInfoDao"></property>
+	</bean>
+
+	<bean id="pagingService" class="com.SSHforum.service.imp.PagingServiceImp">
+		<property name="pagingDao" ref="pagingDao"></property>
+	</bean>
+
+	<bean id="commentInfoService" class="com.SSHforum.service.imp.CommentInfoServiceImp">
+		<property name="commentInfoDao" ref="commentInfoDao"></property>
+	</bean>
+
+	<bean id="vagueSearchService" class="com.SSHforum.service.imp.VagueSearchServiceImp">
+		<property name="vagueSearchDao" ref="vagueSearchDao"></property>
+	</bean>
+
+	<bean id="privateLetterService" class="com.SSHforum.service.imp.PrivateLetterServiceImp">
+		<property name="privateLetterDao" ref="privateLetterDao"></property>
+	</bean>
+
+
+	<bean id="userInfoAction" class="com.SSHforum.actions.UserInfoAction"
+		scope="prototype">
+		<property name="userInfoService" ref="userInfoService"></property>
+
+	</bean>
+
+	<bean id="userInfoLoginAction" class="com.SSHforum.actions.UserInfoLoginAction"
+		scope="prototype">
+		<property name="userInfoService" ref="userInfoService"></property>
+		<property name="contentInfoService" ref="contentInfoService"></property>
+		<property name="pagingService" ref="pagingService"></property>
+		<property name="privateLetterService" ref="privateLetterService"></property>
+
+	</bean>
+
+	<bean id="userChangePasswordAction" class="com.SSHforum.actions.UserChangePasswordAction"
+		scope="prototype">
+		<property name="userInfoService" ref="userInfoService"></property>
+	</bean>
+
+	<bean id="issueContentAction" class="com.SSHforum.actions.IssueContentAction"
+		scope="prototype">
+		<property name="contentInfoService" ref="contentInfoService"></property>
+	</bean>
+
+	<bean id="pagingAction" class="com.SSHforum.actions.PagingAction"
+		scope="prototype">
+		<property name="pagingService" ref="pagingService"></property>
+	</bean>
+
+
+
+	<bean id="getDetailContentInfoAction" class="com.SSHforum.actions.getDetailContentInfoAction"
+		scope="prototype">
+		<property name="contentInfoService" ref="contentInfoService"></property>
+		<property name="commentInfoService" ref="commentInfoService"></property>
+	</bean>
+
+	<bean id="commentInfoAction" class="com.SSHforum.actions.CommentInfoAction"
+		scope="prototype">
+		<property name="commentInfoService" ref="commentInfoService"></property>
+		<property name="contentInfoService" ref="contentInfoService"></property>
+	</bean>
+
+	<bean id="getMyContentAction" class="com.SSHforum.actions.GetMyContentAction"
+		scope="prototype">
+		<property name="contentInfoService" ref="contentInfoService"></property>
+	</bean>
+
+	<bean id="vagueSearchAction" class="com.SSHforum.actions.VagueSearchAction"
+		scope="prototype">
+		<property name="vagueSearchService" ref="vagueSearchService"></property>
+	</bean>
+
+	<bean id="personWithPersonAction" class="com.SSHforum.actions.PersonWithPersonAction"
+		scope="prototype">
+		<property name="userInfoService" ref="userInfoService"></property>
+		<property name="contentInfoService" ref="contentInfoService"></property>
+	</bean>
+
+	<bean id="privateLetterAction" class="com.SSHforum.actions.PrivateLetterAction"
+		scope="prototype">
+		<property name="privateLetterService" ref="privateLetterService"></property>
+	</bean>
+	
+	<bean id="alterUseInfoAction" class="com.SSHforum.actions.AlterUseInfoAction" scope="prototype">
+		<property name="userInfoService" ref="userInfoService"></property>
+	</bean>
+	
+	<bean id="validateAction" class="com.SSHforum.actions.validateAction" scope="prototype">
+		<property name="userInfoService" ref="userInfoService"></property>
+	</bean>
+	
+	<bean id="addPraiseAction" class="com.SSHforum.actions.AddPraiseAction" scope="prototype">
+		<property name="commentInfoService" ref="commentInfoService"></property>
+	</bean>
+</beans> 

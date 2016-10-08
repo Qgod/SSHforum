@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+  <!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="utf-8" />
+	<constant name="struts.devMode" value="false" />
+
+	<package name="default" extends="json-default">
+
+		<action name="saveUserInfo" class="userInfoAction">
+			<result name="success">../jsp/RegistSuccess.jsp</result>
+		</action>
+
+		<action name="Login" class="userInfoLoginAction">
+			<result name="success">../jsp/MainPage.jsp</result>
+			<result name="input">../jsp/Login.jsp</result>
+		</action>
+
+		<action name="Change_*" class="userChangePasswordAction"
+			method="{1}">
+			<result name="getU">../jsp/ChangePassword.jsp</result>
+			<result name="validateQ">../jsp/SetPassword.jsp</result>
+			<result name="validateFail">../jsp/ChangePassword.jsp</result>
+			<result name="changeP">../jsp/Login.jsp</result>
+		</action>
+
+		<action name="issueContent" class="issueContentAction">
+			<result name="issueSuccess" type="chain">Login</result>
+			<result name="invalid.token">../jsp/MainPage.jsp</result>
+			<interceptor-ref name="tokenSession"></interceptor-ref>
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+		</action>
+
+		<action name="page_*" class="pagingAction" method="{1}">
+			<result name="afterpage">../jsp/MainPage.jsp</result>
+			<result name="beforepage">../jsp/MainPage.jsp</result>
+			<result name="jumppage">../jsp/MainPage.jsp</result>
+		</action>
+
+
+		<action name="CheckInfo" class="getDetailContentInfoAction">
+			<result name="success">../jsp/CheckAndReply.jsp</result>
+		</action>
+
+		<action name="comment_*" class="commentInfoAction" method="{1}">
+			<result name="saveInfo">../jsp/CheckAndReply.jsp</result>
+			<interceptor-ref name="tokenSession"></interceptor-ref>
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+		</action>
+		
+		<action name="getMycontent" class="getMyContentAction">
+			<result name="getmycontent">../jsp/Personal.jsp</result>
+		</action>
+		
+		<action name="SearchContent" class="vagueSearchAction">
+			<result name="vagueSearch">../jsp/SearchPage.jsp</result>
+		</action>
+		
+		<action name="checkOtherUserInfo_*" class="personWithPersonAction" method="{1}">
+			<result name="showtheuserinfo">../jsp/OtherPerson.jsp</result>
+		</action>
+		
+		<action name="privateLetter_*" class="privateLetterAction" method="{1}">
+			<result name="sendSuccess">../jsp/OtherPerson.jsp</result>
+		</action>
+		
+		<action name="alter_*" class="alterUseInfoAction" method="{1}">
+			
+		</action>
+		
+		<action name="viladateUsername" class="validateAction">
+			
+		</action>
+		
+		<action name="praise_*" class="addPraiseAction" method="{1}">
+			
+		</action>
+		
+	</package>
+	
+
+	<!-- <package name="strutsjson" extends="default"> <action name="checkusername" 
+		class="checkUser"> <result name="success">../jsp/Regist.jsp</result> </action> 
+		</package> -->
+
+</struts>

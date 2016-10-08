@@ -1,0 +1,211 @@
+@CHARSET "UTF-8";
+#head
+{
+	box-shadow:3px 1px 0px;
+}
+.badge
+{
+	background-color: gray;
+	font-family: 微软雅黑;
+	border-radius:3px;
+}
+body
+{
+ background-color: white;	
+}
+
+.navbar
+{
+	background-color: DarkSeaGreen;
+}
+.navbar-brand
+{
+	font-family: 'Trebuchet MS';
+	padding-left:200px;
+	font-size: 2.2em;
+}
+.form-control
+{
+	border-radius:2px;
+	font-family: 微软雅黑;
+	width: 520px;
+}
+.btn-default
+{
+	border-radius:3.2px;
+	font-family:微软雅黑;
+	color:White;
+	background-color: DarkSeaGreen;
+	width: 90px;
+}
+.navbar-nav
+{
+	font-family: 微软雅黑;
+	font-size:1.2em;
+	padding-left:50px;
+}
+.dropdown-menu
+{
+	background-color: WhiteSmoke;
+	font-size: 0.9em;
+}
+font
+{
+	color: white;
+}
+
+#Content
+{
+	width:900px;
+	height:2300px;
+	margin-left:200px;
+}
+
+#Content_Left
+{
+	width:630px;
+	height:2800px;
+	float: left;
+}
+
+#Content_Right
+{
+	width:270px;
+	height:2000px;
+	float: left;
+	padding-left:10px;
+}
+#new
+{
+	height:30px;
+	margin-top:10px;
+	font-family: 微软雅黑;
+	font-size: 1.1em;
+}
+#replyNumber
+{
+	float: left;
+	width: 38px;
+	height: 20px;
+	padding-left:2px;
+	margin-left:22px;
+	border-radius: 3px;
+	background-color: Azure;
+	index:1;
+}
+#details
+{
+	width: 530px;
+	height:200px;
+	index:2;
+	float: left;
+	margin-left: 8px;	
+}
+#topic
+{
+	font-family: 微软雅黑;
+	font-size:0.2em;
+	height:17px;
+	color: gray;
+}
+#title
+{
+	font-family: 'Helvetica Neue';
+	height:29px;
+	margin-top: 8px;
+	font-size: 14px;
+	font-weight: 700;
+}
+#from
+{
+	font-family: 微软雅黑;
+	font-size:2px;
+	height:17px;
+}
+#MainText
+{
+	height:90px;
+	line-height:20px;  
+	overflow:hidden;   
+	font-family: 微软雅黑;
+	font-size: 13px;
+	color: #222;
+	margin-top: 8px;
+}
+.label-primary
+{
+	background-color: DarkSeaGreen;
+}
+
+#paging
+{
+	margin-left: 450px;
+    font-family: 微软雅黑;
+}
+.modal-content
+{
+	background-color: white;
+	height: 380px;
+	width: 550px;
+	margin-top: 140px;
+	
+}
+.modal-title
+{
+	font-family: 微软雅黑;
+	color:DarkSeaGreen;
+}
+a:link
+{
+	text-decoration: none;
+}
+.modal-body
+{
+	padding-left:15px;
+	padding-top:5px;
+	padding-bottom: 5px;
+}
+.JumpPage
+{
+	width: 40px;
+	border-radius:2px;
+	border:1px solid;
+}
+.JumpBtn
+{
+	background-color: DarkSeaGreen;
+    border-radius: 2px; 
+    border: 1px solid DarkSeaGreen;
+    color:white;
+    font-family: 微软雅黑;
+    width:40px;
+}
+.myInfo
+{
+	width: 260px;
+	height:160px;
+	margin-top: 50px;
+	color: lightgray;
+}
+.nav-stacked
+{
+	font-size: 10px;
+	font-family: 微软雅黑;
+}
+.others
+{
+	width:260px;
+	height:290px;
+	background-image: url(../images/hand.png);
+}
+.privateLetter-btn
+{
+	color:white;
+	border:1px solid DarkSeaGreen;
+	border-radius:5px;
+	height:30px;
+	width:80px;
+	background-color:DarkSeaGreen;
+	font-family: 微软雅黑;
+	font-size: 1.0em;
+}

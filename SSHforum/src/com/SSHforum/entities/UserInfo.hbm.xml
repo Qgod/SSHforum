@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-5-21 16:31:29 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="com.SSHforum.entities">
+	<class name="UserInfo" table="t_USERINFO">
+		<id name="id" type="java.lang.Integer">
+			<column name="ID" />
+			<generator class="native" />
+		</id>
+		<property name="username" type="java.lang.String">
+			<column name="USERNAME" />
+		</property>
+		<property name="password" type="java.lang.String">
+			<column name="PASSWORD" />
+		</property>
+		<property name="phoneNumber" type="java.lang.String">
+			<column name="PHONENUMBER" />
+		</property>
+		<property name="email" type="java.lang.String">
+			<column name="EMAIL" />
+		</property>
+		<property name="question" type="java.lang.String">
+			<column name="QUESTION"></column>
+		</property>
+		<property name="answer" type="java.lang.String">
+			<column name="ANSWER"></column>
+		</property>
+		<property name="nickname" type="java.lang.String">
+			<column name="NICKNAME"></column>
+		</property>
+		<property name="address" type="java.lang.String">
+			<column name="ADDRESS"></column>
+		</property>
+		<property name="worktype" type="java.lang.String">
+			<column name="WORKTYPE"></column>
+		</property>
+		<property name="education" type="java.lang.String">
+			<column name="EDUCATION"></column>
+		</property>
+		<property name="introduce" type="java.lang.String">
+			<column name="INTRODUCE"></column>
+		</property>
+		<property name="privateletternumber" type="int">
+			<column name="PRIVATELETTERNUMBER"></column>
+		</property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-5-28 20:27:06 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="com.SSHforum.entities">
+    <class name="PrivateLetter" table="t_PRIVATELETTER">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="lettercontent" type="java.lang.String">
+            <column name="LETTERCONTENT" />
+        </property>
+        <property name="createtime" type="date">
+            <column name="CREATETIME" />
+        </property>
+        <property name="reviewer" type="int">
+            <column name="REVIEWER" />
+        </property>
+        <many-to-one name="userInfo" class="UserInfo" lazy="false">
+            <column name="USERINFO_id" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>
